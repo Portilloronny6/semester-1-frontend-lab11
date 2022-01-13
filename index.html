@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Лабораторная работа № 11</h1>
+      <div class="item1">
+        Число элементов массива
+        <input
+          type="number"
+          class="tamano"
+          oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+        />
+        <button class="crear-matriz">Создать массива</button>
+      </div>
+
+      <div class="item2">Исходный Массива</div>
+
+      <div class="item3">
+        <input class="elementos" disabled />
+      </div>
+
+      <div class="inner-container">
+        <div class="item4">
+          <div><strong>Определить</strong></div>
+          <div><input type="checkbox" name="" />Минимальный элемент &nbsp <input name="minimo" /></div>
+          <div><input type="checkbox" name="" />Максимальный элемент &nbsp<input name="maximo" /></div>
+          <div>
+            <input type="checkbox" name="" />Сумма элементов &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input name="suma" />
+          </div>
+          <div><input type="checkbox" name="" />Число отрицательных &nbsp&nbsp&nbsp&nbsp<input name="negativos" /></div>
+          <div><input type="checkbox" name="" id="" />Число не отрицательных <input name="positivos" /></div>
+        </div>
+
+        <div class="item5">
+          <div><strong>Сортировать</strong></div>
+          <div>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="option" /> По возрастанию</div>
+          <div><input type="radio" name="option" /> По убыванию</div>
+          <div>&nbsp&nbsp&nbsp<input type="radio" name="option" /> Без сортировки</div>
+        </div>
+      </div>
+
+      <div class="item6">Отсортированный массив</div>
+
+      <div class="item7"><input type="number" name="" id="" /></div>
+
+      <div class="item8"><button>Вычислить</button></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
